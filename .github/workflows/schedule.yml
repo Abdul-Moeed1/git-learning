@@ -1,0 +1,13 @@
+name: scheduel workflow
+
+on:
+ schedule:
+   - cron: "0 0 * * *"
+
+jobs:
+ schedule-script:
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: printing message
+      run: echo "Printing message"
